@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: url(../React/React-Project/public/header_img.png) no-repeat
+          center center/cover;
+        min-height: 100vh;
+      }
+      header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .logo {
+        font-size: 50px;
+        background: linear-gradient(45deg, orange 40.78%, green 50%);
+        background-clip: text;
+        font-weight: 900;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      header nav ul li {
+        position: relative;
+        list-style: none;
+       float: left;
+      }
+      header ul li a {
+        text-decoration: none;
+        color: green;
+        transition: 0.5s;
+        padding: 10px;
+        display: block;
+        font-size: 20px;
+        
+      }
+      header ul li:hover >ul  {
+        display: block;/* border-bottom: 1px solid black; */
+
+      }
+      header nav ul li ul {
+        position: absolute;
+        left: 0;
+        width: 200px;
+        background: white;
+        display: none;
+      }
+      header nav ul li ul li {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Logo</div>
+      <nav>
+
+          <ul>
+              <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Gallary +</a>
+          <ul>
+              <li><a href="#">grif</a></li>
+              <li>
+                  <a href="#">flex +</a>
+                  <ul>
+                    <li><a href="#">align</a></li>
+                    <li><a href="#">align-item</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">ser</a></li>
+        <li>
+            <a href="#">sbouy</a></li>
+    
+            <li><a href="3">services +</a>
+                <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">React +</a>
+                <ul>
+                    <li><a href="#">JS</a></li>
+                    <li><a href="#">JS</a></li>
+                    <li><a href="#">JS</a></li>
+                </ul>
+            </li>
+        </ul></li>
+        <li><a href="3">about</a></li>
+    </ul>
+    </li>
+</ul>
+</nav>
+</header>
+</body>
+</html>

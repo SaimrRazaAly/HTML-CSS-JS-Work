@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFFE</title>
+</head>
+<body>
+    <h1>IFFE stand for (imedeitly invoked funciton experssion)</h1>
+    <h2>THIS Key Word tells you about the current context in the case of objects</h2>
+    <script>
+function name() {
+    console.log("this is how you write a normal function ");
+}
+
+// this is how you will imedietly invoke a funciton 
+(function username(){
+    console.log("this is the syntax that how you can use a IIFE in js and you can call it with a ()");
+    
+})();
+// make sure to add a terminator at the end of the () to terminate otherwise the IIFE will not run
+
+( (name) => {
+    console.log("if you want to run two iffe in a single file than make sure");
+    console.log("if you want to add parameters then pass them in the () bracket");
+    
+    console.info(name)
+})("saim")
+    </script>
+</body>
+</html>

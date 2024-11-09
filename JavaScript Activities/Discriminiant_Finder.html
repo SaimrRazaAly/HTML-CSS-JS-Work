@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let div = document.createElement("p");
+      div.innerHTML = `(<h1>Formula is b <sup>2</sup>- 4ac</h1>)`;
+
+      let value_of_a = Number.parseInt(
+        prompt(`Enter the value of a ${div.innerText}`)
+      );
+      // console.log(value_of_a);
+      let b = Number.parseInt(prompt(`Enter the value of a ${div.innerText}`));
+      let value_of_b = b * b;
+      // console.log(value_of_b);
+      let value_of_c = Number.parseInt(
+        prompt(`Enter the value of c ${div.innerText}`)
+      );
+      // console.log(value_of_c);
+
+      function solve(a, b, c) {
+        return b - 4 * a * c;
+      }
+
+      //   console.log(solve(value_of_a, value_of_b, value_of_c));
+      let solved = solve(value_of_a, value_of_b, value_of_c);
+      // console.log(solved);
+
+      if (solved > 0 && solved % 2 == 0) {
+        alert(solved + " " + "rational (real) and unequal in nature");
+      } else if (solved > 0 && solved % 2 != 0) {
+        alert(solved + " " + "IRrational (real) and unequal in nature");
+      } else if (solved == 0) {
+        alert(solved + " " + "rational and equal in nature");
+      } else if (solved < 0) {
+        alert(solved + " " + "imagenery in nature and unequal");
+      } else {
+        alert("please enter vaild information");
+      }
+      //   result.innerText = "please enter vaild information";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a =Number.parseInt(prompt("1st number here.."))
+        let b =Number.parseInt(prompt("2st number here.."))
+        let c = prompt('Enter one of then ( sum sub div mul )')
+
+switch (c) {
+    case 'sum':
+        console.log(a+b)
+        break;
+    case 'sub':
+        console.log(a-b)
+        break;
+    case 'mul':
+        console.log(a*b)
+        break;
+    case 'div':
+        console.log(a/b)
+        break;
+
+    default:
+        console.error("Invalid Expression was entred by the user")
+        break;
+}
+    
+ 
+    </script>
+</body>
+</html>

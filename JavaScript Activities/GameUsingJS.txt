@@ -1,0 +1,14 @@
+<!-- Author: Derek O Reilly, Dundalk Institute of Technology, Ireland. --> 
+<!DOCTYPE html> <html>     <head>         <meta charset="UTF-8">         <meta name="viewport" content="width=device-width, initial-scale=1.0">         <title>GENIUS worked example</title>         <link rel="shortcut icon" type="image/png" href="images/genius_icon.png"/>         <style>             #gameCanvas             {                 /* the canvas styling usually does not change */                 outline:1px solid darkgrey;                 width:500px;                 height:500px;             }         </style> 
+    </head> 
+    <body>         <canvas id = "gameCanvas"></canvas> 
+        <script>             let imgImage = new Image();             imgImage.src = "images/map.png"; 
+            let carImage = new Image();             carImage.src = "images/car.png"; 
+            window.onload = function ()             {                 let canvas = document.getElementById("gameCanvas");                 canvas.width = canvas.clientWidth;                 canvas.height = canvas.clientHeight;                 let ctx = canvas.getContext("2d"); 
+                let x = 0; 
+                animationInterval = setInterval(updateCarState, 25); // call renderCanvas function every 25 milliseconds
+                renderCanvas(); // first call to renderCanvas 
+                function updateCarState()                 {                     if (x > (canvas.width + 1))                     {                         x = 0;                     }                     else                     {                         x++;                     }                 } 
+                function renderCanvas()                 {                     ctx.drawImage(imgImage, 0, 0, canvas.width, canvas.height); // clear any previous drawing                     ctx.drawImage(carImage, x, 240, 40, 20); 
+                    requestAnimationFrame(renderCanvas); // call renderCanvas again as soon as possible }
+            };         </script>       </body> </html>

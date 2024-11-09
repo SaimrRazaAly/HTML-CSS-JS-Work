@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Dark.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="main-heading">Dark Mode Using Local <span>Storage</span> </h1>
+    <h5 class="sub-heading">If you don't belive reload the page</h5>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat sint
+      quis, dolorum quo delectus at commodi minima odit pariatur! Laborum et
+      modi vitae vero, temporibus accusamus dolore. Fugit, quibusdam
+      praesentium?
+    </p>
+    <button  class="button-90" id="toogle-btn">Toogle</button>
+    <script>
+      let Toogle_Btn = document.querySelector("#toogle-btn");
+      if (localStorage.getItem("darkMode") === "enabled") {
+        document.body.classList.add("dark-mode");
+        Toogle_Btn.textContent = "Switch to light mode";
+      }
+
+      Toogle_Btn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+          localStorage.setItem("darkMode", "enabled");
+          Toogle_Btn.textContent = "Switch to light mode";
+          
+        } else {
+          localStorage.setItem("darkMode", "disabled");
+          Toogle_Btn.textContent = "Switch to Dark mode";
+        }
+      });
+    </script>
+  </body>
+</html>

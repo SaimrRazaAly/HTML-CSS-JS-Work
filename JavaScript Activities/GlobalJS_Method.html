@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <script>
+
+        // Encodign means converting from one shape to another and the space in url are join by %20
+      let uri = "https://www.example.com/submit?name=maaike van putten";
+      let encoded_uri = encodeURI(uri);
+      console.log("Encoded:", encoded_uri);
+      let decoded_uri = decodeURI(encoded_uri);
+      console.log("Decoded:", decoded_uri);
+    </script>
+  </body>
+</html>
