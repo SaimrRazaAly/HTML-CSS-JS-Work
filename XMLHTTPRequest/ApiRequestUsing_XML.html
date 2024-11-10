@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let yourUrl = "paste a link of a api";
+      const xhr = new XMLHttpRequest();
+      xhr.send("GET", yourUrl);
+      xhr.onreadystatechange = () => {
+        if (xhr.readyState === 4) {
+          const data = JSON.parse(ResponseText); // JSON to convert strig into a object
+          console.log(data.followers);
+        }
+      };
+
+      xhr.send();
+    </script>
+  </body>
+</html>
