@@ -19,8 +19,8 @@ function updateDisplay() {
   array.forEach((value, i) => {
     result.innerHTML += `
         <div>${value}</div>
-        <button onclick='edit(${i})'>Edit</button>
-        <button onclick='del(${i})'>Del</button>
+        <button class="edit" onclick='edit(${i})'>Edit</button>
+        <button class="del" onclick='del(${i})'>Del</button>
         `;
   });
 }

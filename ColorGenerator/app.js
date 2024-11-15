@@ -21,7 +21,7 @@ console.log(final_Color);
 start.addEventListener("click", () => {
   main = setInterval(function () {
     document.body.style.backgroundColor = generateColors();
-  }, 1000);
+  }, 500);
 });
 stop.addEventListener("click", () => {
   clearInterval(main);
