@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- navbar -->
+     <nav>
+        <div class="logo"><h2>Logo</h2></div>
+        <ul id="link_container">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="hamburger">
+            =
+        </div>
+     </nav>
+
+     <div class="hero">
+        <div class="hero-content">
+            <p>Hello, my name is</p>
+            <h2>John Smith</h2>
+            <h3>And I am a <span>Developer</span></h3>
+            <button>Hire me</button>
+        </div>
+     </div>
+    
+
+     <script>
+        let links = document.querySelector('#link_container');
+        let hamburger = document.querySelector('.hamburger');
+
+        hamburger.addEventListener('click',()=>{
+            links.classList.toggle('open')
+        })
+     </script>
+</body>
+</html>

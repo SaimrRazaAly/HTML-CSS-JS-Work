@@ -1,0 +1,202 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+ /* Urbanist Font*/
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"); /* Outfit Font*/
+
+
+/* Gernal Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --qoute-color: #344054;
+  --light-orange-color: #feb273;
+  --main-color: #fd853a;
+  --big-text: "Urbanist", sans-serif;
+  --content-text: "Outfit", sans-serif;
+  --transparent-color: rgba(255, 255, 255, 0.1);
+  --dark-color: #000000;
+  --light-color: #ffffff;
+}
+
+body {
+  background: var(--light-color);
+  font-family: var(--content-text);
+  overflow: hidden;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--dark-color);
+  width: 80%;
+  margin: 5px auto;
+  border-radius: 50px;
+}
+
+.nav-item{
+  color: var(--light-color);
+  padding: 15px 25px;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: var(--big-text);
+  transition: 0.5s;
+  border-radius: 50px;
+  margin: 0 5px;
+}
+.navbar .active,
+.navbar .nav-item:hover{
+  background: var(--main-color);
+}
+
+.navbar-logo {
+  max-width: 250px;
+}
+
+.navbar-logo img {
+  width: 100%;
+}
+
+
+/* Hero seciton */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+  position: relative;
+  height: 88vh;
+}
+
+.hero-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+}
+
+.hello {
+  padding: 10px 14px;
+  background: none;
+  border: 2px solid #2e2e2e;
+  color: var(--dark-color);
+  font-weight: 800;
+  border-radius: 50px;
+}
+
+.main-text {
+  text-align: center;
+  max-width: 750px;
+  font-size: 50px;
+  font-family: var(--big-text);
+  font-weight: 500;
+}
+.main-text span{
+  color: var(--main-color);
+}
+
+.person-img {
+  position: absolute;
+  bottom: 1px;
+  max-width: 600px;
+  display: flex;
+  padding-right: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.person-img img {
+  width: 100%;
+}
+
+.half-circle {
+  width: 500px;
+  height: 250px;
+  background-color: var(--light-orange-color);
+  border-top-left-radius: 400px;
+  border-top-right-radius: 400px;
+  position: absolute;
+  bottom: 1px;
+}
+
+.hero-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.call-to-action {
+  color: var(--light-color);
+  margin: 40px auto;
+  background-color: rgba(255, 251, 251, 0.345);
+  border: 1px solid rgba(255, 253, 253, 0.543);
+  padding: 16px 45px 16px 4px;
+  border-radius: 50px;
+  backdrop-filter: blur(1px);
+}
+
+.call-to-action a {
+  text-decoration: none;
+  color: var(--light-color);
+  font-weight: 700;
+  font-size: 20px;
+  font-family: var(--content-text);
+}
+
+.active_cta {
+  font-family: var(--big-text);
+  background-color: var(--main-color);
+  padding: 12px 40px 12px 20px;
+  font-size: 20px;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+/* Hero Content */
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+
+blockquote {
+  margin: 20px 0;
+  color: var(--qoute-color);
+  max-width: 300px;
+  font-family: var(--content-text);
+}
+
+
+.experince {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.experince-year h2 {
+  font-family: var(--content-text);
+  font-size: 32px;
+}
+
+.experince-year sup {
+  font-family: var(--content-text);
+  font-size: 16px;
+}
+
+
+

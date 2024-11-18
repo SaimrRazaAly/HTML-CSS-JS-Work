@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stay Focused</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+    }
+    input, button {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Stay Focused</h1>
+  <input type="text" id="siteInput" placeholder="Enter website (e.g., facebook.com)" />
+  <button id="addSite">Add</button>
+  <ul id="siteList"></ul>
+  <h2>Block Timer</h2>
+  <label for="startHour">Start Hour:</label>
+  <input type="number" id="startHour" min="0" max="23" />
+  <label for="endHour">End Hour:</label>
+  <input type="number" id="endHour" min="0" max="23" />
+  <button id="setTimer">Set Timer</button>
+  <script src="popup.js"></script>
+</body>
+</html>
