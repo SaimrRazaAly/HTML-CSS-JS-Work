@@ -1,96 +1,100 @@
 /* Reset some default styling */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Centering the content on the page */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Centering the content on the page */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Styling for the heading */
+h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Label and radio button styling */
+label {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+input[type="radio"] {
+  margin-right: 0.5rem;
+  accent-color: #007bff; /* Adding color to radio buttons */
+}
+
+/* Button styling */
+.btn {
+  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+.copy {
+  background: #b0b300;
+}
+.copy:hover {
+  background: #919301;
+}
+/* Password display styling */
+#password {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fafafa;
+  width: fit-content;
+  min-width: 200px;
+  text-align: center;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
   body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f5f5f5;
-    color: #333;
+    padding: 1rem;
   }
-  
-  /* Styling for the heading */
+
   h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #333;
+    font-size: 1.3rem;
   }
-  
-  /* Label and radio button styling */
+
   label {
-    font-size: 1rem;
-    margin: 0.5rem;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
+    font-size: 0.9rem;
   }
-  
-  input[type="radio"] {
-    margin-right: 0.5rem;
-    accent-color: #007bff; /* Adding color to radio buttons */
-  }
-  
-  /* Button styling */
+
   button {
-    font-size: 1rem;
-    padding: 0.7rem 1.5rem;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 1rem;
-    transition: background-color 0.3s ease;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
   }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Password display styling */
+
   #password {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    color: #333;
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fafafa;
-    width: fit-content;
-    min-width: 200px;
-    text-align: center;
+    font-size: 1rem;
+    min-width: 150px;
   }
-  
-  /* Responsive styling */
-  @media (max-width: 600px) {
-    body {
-      padding: 1rem;
-    }
-  
-    h2 {
-      font-size: 1.3rem;
-    }
-  
-    label {
-      font-size: 0.9rem;
-    }
-  
-    button {
-      padding: 0.6rem 1.2rem;
-      font-size: 0.9rem;
-    }
-  
-    #password {
-      font-size: 1rem;
-      min-width: 150px;
-    }
-  }
-  
+}
